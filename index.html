@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Portfolio</title>
 
-    <link rel="stylesheet" href="./style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="./../../../JavaScript/Dom/bts/bst/css/bootstrap.min.css" rel="stylesheet"> -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
 <!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 fixed-top">
+
     <div class="container">
         <a class="navbar-brand fw-bold" href="index.html">Suraj Kushwaha</a>
 
@@ -20,19 +22,22 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a href="index.html"target="_blank" class="nav-link active">Home</a></li>
-                <li class="nav-item"><a href="about.html"target="_blank" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="projects.html"target="_blank" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="contact.html" target="_blank"class="nav-link">Contact</a></li>
-            </ul>
-        </div>
+    <ul class="navbar-nav ms-auto">
+    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+    <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+    <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+</ul>
+
+</div>
+
     </div>
 </nav>
 
 
 <!-- HERO SECTION -->
-<header class="hero">
+<header class="hero" id="home">
     <div class="container text-center">
         <img src="./profile.jpg" alt="profile" 
              class="img-fluid rounded-circle mb-4 shadow" style="max-width:180px">
@@ -40,48 +45,170 @@
         <h1>Hello, I'm <span class="fw-bold">Suraj Kushwaha</span></h1>
         <p class="mt-2">Java Developer | Spring Boot | Full Stack Learner</p>
 
-        <a href="Contact.html" class="btn btn-light text-primary mt-3">Hire Me</a>
+        <a href="#contact" class="btn btn-light text-primary mt-3">Hire Me</a>
+
     </div>
 </header>
+ 
+<!-- About SEction -->
 
+<section id="about">
+    <main class="py-5">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 text-center">
+<img src="./profile.jpg" class="img-fluid rounded shadow mb-3" style="max-width:240px">
+<a class="btn btn-outline-primary" 
+   href="./../../Document/CheckResume.pdf">
+   Download Resume
+</a>
 
-<!-- SKILLS SECTION -->
-<section class="py-5">
+</div>
+<div class="col-lg-8">
+<h2>About Me</h2>
+<p>Hi, I’m Suraj Kushwaha, a passionate Java Full-Stack Developer with a strong foundation in Core Java, OOPs, SQL, HTML, CSS, JavaScript, Spring, and Spring Boot. I enjoy building clean, user-friendly applications and continuously improving my coding skills.</p>
+<p>I am a B.C.A graduate (2024) with a strong passion for Java development. I am currently looking for opportunities as a Java Developer where I can apply my programming skills, problem-solving abilities, and knowledge of core Java and related technologies to contribute to real-world projects and grow as a professional.</p>
+<h5 class="mt-4">Education & Interests</h5>
+<ul>
+<li>B.C.A — (2024) — Indian Institute Of Business Management,(Patna).</li>
+<li>Looking for the oportunity to showcase my skills</li>
+<li>Interests: Web development, problem solving, system design</li>
+</ul>
+<h5>My Goal</h5>
+<p>To become a skilled Java Full-Stack Developer and get my first job in software development by building real-world projects and mastering backend + frontend skills.</p>
+<h5>My Strength</h5>
+<ul>
+    <li>Strong Login Thinking</li>
+    <li>Quick Learner</li>
+    <li>Consistence & Hardworking</li>
+    <li>Focused on writing clean and readable code</li>
+</ul>
+</div>
+</div>
+</div>
+</main>
+</section>
+
+<!-- Skill Section -->
+
+<section class="py-5" id="skills">
     <div class="container">
-        <h3 class="mb-4">Skills</h3>
+        <h2 class="mb-4">Technical Skills</h2>
+
         <div class="row g-3">
-            
+
             <div class="col-sm-6 col-md-3">
-                <div class="card p-3 h-100">
-                    <h6 class="mb-1">Backend</h6>
-                    <p class="text-muted small mb-0">Java, Spring Boot, REST APIs, Hibernate</p>
+                <div class="card p-3 h-100 shadow-sm">
+                    <h6>Backend</h6>
+                    <p class="text-muted small">
+                        Java, Spring Boot, Spring MVC, REST APIs, Hibernate, Microservices
+                    </p>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-3">
-                <div class="card p-3 h-100">
-                    <h6 class="mb-1">Frontend</h6>
-                    <p class="text-muted small mb-0">HTML, CSS, JavaScript, Bootstrap</p>
+                <div class="card p-3 h-100 shadow-sm">
+                    <h6>Frontend</h6>
+                    <p class="text-muted small">
+                        HTML, CSS, JavaScript, Bootstrap
+                    </p>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-3">
-                <div class="card p-3 h-100">
-                    <h6 class="mb-1">Database</h6>
-                    <p class="text-muted small mb-0">Oracle, JDBC</p>
+                <div class="card p-3 h-100 shadow-sm">
+                    <h6>Database</h6>
+                    <p class="text-muted small">
+                        Oracle, PostgreSQL, JDBC
+                    </p>
                 </div>
             </div>
 
             <div class="col-sm-6 col-md-3">
-                <div class="card p-3 h-100">
-                    <h6 class="mb-1">Tools</h6>
-                    <p class="text-muted small mb-0">Git, GitHub, Postman, VS Code, Eclips</p>
+                <div class="card p-3 h-100 shadow-sm">
+                    <h6>Tools</h6>
+                    <p class="text-muted small">
+                        Git, GitHub, Postman, VS Code, Eclipse
+                    </p>
                 </div>
             </div>
 
         </div>
     </div>
 </section>
+
+
+<!-- Project Section -->
+
+<Section id="projects">
+    <main class="py-5">
+    <div class="container">
+        <h2 class="mb-4">Selected Projects</h2>
+        <div class="row gy-4">
+
+            <!-- Project Card 1 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Online Food Ordering</h5>
+                        <p class="card-text small text-muted">Java, Spring MVC, Spring JPA, PostgreSQL</p>
+                        <p class="card-text">A full-stack web application for ordering food with admin and user panels.</p>
+                        <a href="https://github.com/yourusername/food-delivery" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Management System</h5>
+                        <p class="card-text small text-muted">Java, JDBC, Oracle, Bootstrap</p>
+                        <p class="card-text">A CRUD application to manage student records and generate reports.</p>
+                        <a href="https://github.com/yourusername/student-management" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">To_Do List</h5>
+                        <p class="card-text small text-muted">html, CSS, JavaScript, Bootstrap</p>
+                        <p class="card-text">Allows users to add, delete, and mark tasks as completed and Tasks are saved using browser’s localStorag</p>
+                        <a href="https://github.com/surajmaurya6688/WebProject/blob/main/ToDo_List.html" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Calculator Web</h5>
+                        <p class="card-text small text-muted">html, CSS, JavaScript, Bootstrap</p>
+                        <p class="card-text">Calculates tip amount based on bill total and selected percentage Uses JavaScript for real-time calculation as input values change</p>
+                        <a href="https://github.com/surajmaurya6688/WebProject/blob/main/Calculator.html" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body">
+                        <h5 class="card-title">Digital Clock Web</h5>
+                        <p class="card-text small text-muted">html, CSS, JavaScript, Bootstrap</p>
+                        <p class="card-text">Displays the current real-time clock (hours, minutes, seconds) Includes AM/PM format and auto-updates every second</p>
+                        <a href="https://github.com/surajmaurya6688/WebProject/blob/main/DigitalClock.html" target="_blank" class="btn btn-outline-primary btn-sm">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project cards here -->
+
+        </div>
+    </div>
+</main>
+</Section>
+
 
 <section class="py-5">
     <div class="container">
@@ -100,6 +227,43 @@
     </div>
 </section>
 
+<!-- Contact Section -->
+
+<section id="contact">
+    <main class="py-5">
+<div class="container">
+<h2>Contact</h2>
+<p class="text-muted">Prefer email — I usually respond within 48 hours.</p>
+<div class="row">
+<div class="col-md-6">
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Email</label>
+<input type="email" class="form-control" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Message</label>
+<textarea class="form-control" rows="5" required></textarea>
+</div>
+<button class="btn btn-primary" type="submit">Send Message</button>
+</div>
+<div class="col-md-6">
+<h5>Connect</h5>
+<p>
+<strong>Contact No:</strong> 9608933208<br>
+<strong>Email:</strong> surajmaurya6688@gmail.com<br>
+<strong>LinkedIn:</strong> <a href="#"> https://www.linkedin.com/in/imsurajkushwaha-873369258/</a><br>
+<strong>GitHub:</strong> <a href="#"> https://github.com/surajmaurya6688</a>
+</p>
+</div>
+</div>
+</div>
+</main>
+</section>
+
 <!-- FOOTER -->
 <footer class="bg-white py-4 mt-5 border-top">
     <div class="container text-center small text-muted">
@@ -111,4 +275,3 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
