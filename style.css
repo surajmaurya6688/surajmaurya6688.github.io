@@ -85,6 +85,16 @@ section h3 {
 }
 
 /* ---------- PROJECT CARDS ---------- */
+
+#projects .card-img-top {
+    height: 200px;
+    width: 355px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+
 #projects .card {
     border-radius: 12px;
     transition: 0.3s ease;
